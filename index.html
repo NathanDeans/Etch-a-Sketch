@@ -10,22 +10,26 @@
 <body>
     <div class="flex-container">
         <div class="title"><h1>Etch-A-Sketchin</h1></div>
-        <div class="mode">Mode: Coloring</div>
+        
         <div class="content">
             <div class="board"></div>
                 <div class="buttons">
-                <button class="blackButton" > Black</button>
-                <button class="erasorButton">Erasor</button>
-                <button class="grayButton" >Gray</button>
-                <button class="random">Random</button>
+                <button onclick="changeColor('black')" class="blackButton" > Black</button>
+                <button onclick="changeColor('white')" class="erasorButton">Erasor</button>
+                <button onclick="changeColor('Gray')" class="grayButton" >Gray</button>
+                <button onclick="changeColor('random')" class="random">Random</button>
+                <button onclick="addBorder()" class="borders">Add Border</button>
+                <button onclick="removeBorder()" class="borders">Remove Border</button>
                 <button onclick="resetBoard()">Reset</button>
                 </div>
                 <div>
-                    <input type ="text" 
+                    <input 
+                    type ="text" 
                     placeholder="Size of Board"
                     value="16"
+                    onchange="changeSize(this.value)"
                     />
-                    <button>Set Size</button>
+                    <button class="sizing">Set Size</button>
                 </div>
         <div class="error">Input must be between 2 and 100</div>
         </div>

@@ -1,6 +1,41 @@
-.board {
-    width: 500px;
-    height: 500px;
-    display: grid;
+.flex-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
+
+
+.board {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+  min-height: 300px;
+  width: 60vw;
+  height: 60vw;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.input {
+    width: 50px;
+}
